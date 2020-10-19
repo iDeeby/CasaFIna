@@ -1,0 +1,83 @@
+html, body {
+    height: 100vh;
+}
+
+header {
+    position: relative;
+    background-image: url(../img/castelo.jpg);
+    background-size: cover;
+    background-position: top center;
+    height: inherit;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.banner-header {
+    position: absolute;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .7);
+    width: 80%;
+    border-radius: 8px;
+    padding: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s;
+}
+
+#paineis-sobre {
+    margin-top: 20px;
+}
+
+.titulo-depoimentos {
+    width: 100%;
+    color: #fff;
+    background-color: blueviolet;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin: 0px;
+    font-size: 24px;
+}
+
+.grupo-radio,
+.contato-select {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.contato-select {
+    float: right;
+}
+
+.grupo-radio .radio:first-child {
+    margin-top: 0;
+}
+
+footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #333;
+    color: #fff;
+}
+
+@media(min-width: 768px) {
+    #paineis-sobre {
+        margin-top: 0;
+    }
+}
+
+@media(min-width: 992px) {
+    .banner-header {
+        left: 0;
+        transform: translate(0, -80%);
+        position: relative;
+    }
+
+    .topCasaFinaWrapper {
+        position: absolute;
+        height: 100%;
+    }
+}
